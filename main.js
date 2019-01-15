@@ -1,4 +1,6 @@
+console.log(document.getElementById('item').value);
 document.addEventListener("DOMContentLoaded", init);
+
 
 function init(event) {
   regForm = document.forms["registration"];
@@ -45,6 +47,21 @@ function validateForm(event) {
     }
   }
 
+  if(!document.getElementById('robot').checked) {
+    errorMessages.push("* Are you a robot?");
+  };
+
+  var item = document.getElementById('item');
+
+   if(item.value == '') {
+    errorMessages.push('* Select a profession');
+  }
+
+
+
+
+
+
   if (!isChecked) {
     errorMessages.push("* Please choose your gender");
   }
@@ -52,6 +69,7 @@ function validateForm(event) {
   if (!regForm["description"].value) {
     errorMessages.push("* Please enter a description about you");
   }
+  
 
   displayErrors(errorMessages);
 
