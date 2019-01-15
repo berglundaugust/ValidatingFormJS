@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form validation with JS</title>
+  </head>
+  <body>
+    <form action="#" id="registration">
+      <h1>Register an Account</h1>
+
+      <p>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" />
+      </p>
+
+      <p>
+        <label for="email">Email-adress</label>
+        <input type="text" id="email" name="email">
+      </p>
+
+      <p>
+        <label for="password1">Password:</label>
+        <input type="password" id="password1" name="password1" />
+      </p>
+
+      <p>
+        <label for="password2">Confirm Password:</label>
+        <input type="password" id="password2" name="password2" />
+      </p>
+
+      <p>
+        <input type="radio" id="genderM" name="gender" value="male" />
+        <label for="genderM">Male</label>
+      </p>
+
+      <p>
+        <input type="radio" id="genderF" name="gender" value="female" />
+        <label for="genderF">Female</label>
+      </p>
+
+      <p>
+        <input type="radio" id="robot" name="robot" value="robot" />
+        <label for="Im not a robot">Im not a robot</label>
+      </p>
+
+      <select name="item" size="1">
+        <option value="">Profession</option>
+        <option value="Student">Student</option>
+        <option value="Employee">Employee</option>
+        <option value="Chilling">Chilling</option>
+      </select>
+
+      <p>
+        <label for="desc">Tell us about your self</label>
+        <br>
+
+        <textarea name="description" id="desc" cols="30" rows="10"></textarea>
+      </p>
+
+      <p><button type="submit" id="register">Register!</button></p>
+    </form>
+
+    <div id="errorMessages"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
