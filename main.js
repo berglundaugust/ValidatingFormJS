@@ -57,11 +57,6 @@ function validateForm(event) {
     errorMessages.push('* Select a profession');
   }
 
-
-
-
-
-
   if (!isChecked) {
     errorMessages.push("* Please choose your gender");
   }

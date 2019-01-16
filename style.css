@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+.container {
+  height: fit-content;
+  width: 430px;
+  background-color: rgba(110, 110, 110, 0.8); 
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 30px;
+
+
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+label {
+   
+    display: block;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+button {
+   border-radius: 5px;
+   font-size: 20px;
+}
+
+#errorMessages {
+    color: red;
+}

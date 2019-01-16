@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Form validation with JS</title>
+    <link rel="stylesheet" href="style.css"/>
+
+   
   </head>
   <body>
+    <div class="container">
+      <div class="box">
+
+   
     <form action="index1.html" id="registration">
       <h1>Register an Account</h1>
 
@@ -17,7 +24,7 @@
 
       <p>
         <label for="email">Email-adress</label>
-        <input type="text" id="email" name="email">
+        <input type="text" id="email" name="email" />
       </p>
 
       <p>
@@ -46,23 +53,28 @@
       </p>
 
       <select id="item" name="item" size="1">
-        <option value="" selected disabled >Profession</option>
+        <option value="" selected disabled>Profession</option>
         <option value="Student">Student</option>
         <option value="Employee">Employee</option>
         <option value="Chilling">Chilling</option>
       </select>
 
       <p>
-        <label for="desc">Tell us about your self</label>
-        <br>
+        <label for="desc">Tell us about your self</label> <br />
 
         <textarea name="description" id="desc" cols="30" rows="10"></textarea>
       </p>
 
-      <p><button type="submit" id="register">Register!</button></p>
+      <p id="knapp">
+        <button type="submit" id="register">
+          Register!
+        </button>
+      </p>
     </form>
 
     <div id="errorMessages"></div>
+  </div>
+</div>
     <script src="main.js"></script>
   </body>
 </html>
