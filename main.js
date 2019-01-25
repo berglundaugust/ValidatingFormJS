@@ -1,6 +1,7 @@
 console.log(document.getElementById('item').value);
 document.addEventListener("DOMContentLoaded", init);
 
+// Hello world remove this later..
 
 function init(event) {
   regForm = document.forms["registration"];
